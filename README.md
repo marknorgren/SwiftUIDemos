@@ -3,5 +3,5 @@
 
 ## Modal with NavigationView
 
-![Modal with NavigationView](modal-with-navigation-view-01.gif)
+![Modal with NavigationView](recordings/modal-with-navigation-view-01.gif)
 
