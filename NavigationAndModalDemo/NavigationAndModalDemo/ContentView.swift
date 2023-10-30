@@ -12,9 +12,18 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         NavigationView {
-            List {
-                NavigationLink("ModelWithNavigationView", destination: ModelWithNavigationView())
+            VStack {
+                List {
+                    NavigationLink("ModelWithNavigationView", destination: ModelWithNavigationView())
+                }
+                Text("Bottom")
+                NavigationView {
+                    List {
+                        NavigationLink("ModelWithNavigationView", destination: Text("hi"))
+                    }
+                }
             }
+
             .navigationBarTitle("Main List", displayMode: .inline)
         }
     }
